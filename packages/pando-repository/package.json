@@ -14,7 +14,7 @@
     "lint:contracts": "solium --dir ./contracts",
     "lint:tests": "eslint ./test",
     "lint:app": "cd app && npm run lint",
-    "lint": "npm run lint:contracts && npm run lint:tests && npm run lint:app",
+    "lint": "npm run lint:contracts && npm run lint:tests && npm run lint:app && tslint -c tslint.json 'app/src/**/*.ts'",
     "compile": "aragon contracts compile",
     "test": "aragon contracts test --network devchain",
     "start": "cd app && npm run start",
@@ -41,7 +41,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "ethlint": "^1.2.3",
     "prettier": "^1.8.2",
-    "truffle": "^5.0.0"
+    "truffle": "^5.0.0",
+    "@types/node": "^10.12.21",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.1"
   },
   "gitHead": "cb2b7c6fe7805fdbbcd29733c3ebb24eeb5d3d42"
 }
