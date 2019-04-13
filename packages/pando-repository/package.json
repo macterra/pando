@@ -26,7 +26,8 @@
     "publish:major:rinkeby": "aragon apm publish major --use-frame --files ./app/build --environment rinkeby"
   },
   "dependencies": {
-    "@aragon/os": "^4.0.1"
+    "@aragon/os": "^4.0.1",
+    "ipld-git": "^0.3.0"
   },
   "devDependencies": {
     "@aragon/cli": "^5.5.0",
